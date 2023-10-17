@@ -15,6 +15,11 @@ inputs:
     description: Directory into which built files are placed
     default: build
 
+outputs:
+  page_url:
+    description: URL of the Pages site after deploying
+    value: ${{ steps.deployment.outputs.page_url }}
+
 runs:
   using: "composite"
   steps:
