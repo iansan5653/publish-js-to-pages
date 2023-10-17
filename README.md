@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: deployment # Add an ID to the step so we can get the URL on completion
-        uses: iansan5653/publish-js-to-pages@v1 # Note: GitHub recommends replacing `v1` here with a full commmit hash
+        uses: iansan5653/publish-js-to-pages@1.0.1 # Note: GitHub recommends tagging this to a full commit hash
 ```
 
 ### Inputs
@@ -54,7 +54,7 @@ If any of these are not true, it's easy to override them. For example:
 ```yml
     steps:
       - id: deployment
-        uses: iansan5653/publish-js-to-pages@ed31b5540b521813852aecb05075efbd38aa8d9c
+        uses: iansan5653/publish-js-to-pages
         with:
           build_command: npm run compile
           build_output_directory: output
