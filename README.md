@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: deployment # Add an ID to the step so we can get the URL on completion
-        uses: iansan5653/publish-js-to-pages@ed31b5540b521813852aecb05075efbd38aa8d9c
+        uses: iansan5653/publish-js-to-pages@v1 # Note: GitHub recommends replacing `v1` here with a full commmit hash
 ```
 
 ### Inputs
