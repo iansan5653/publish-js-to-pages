@@ -2,6 +2,10 @@ name: Publish JS to GitHub Pages
 
 description: Build and publish a JavaScript application to Pages
 
+branding:
+  icon: upload-cloud
+  color: blue
+
 inputs:
   node_version:
     description: Version of NodeJS to install
@@ -25,7 +29,7 @@ outputs:
     value: ${{ steps.deployment.outputs.page_url }}
 
 runs:
-  using: "composite"
+  using: composite
   steps:
     - uses: actions/checkout@v3
     
