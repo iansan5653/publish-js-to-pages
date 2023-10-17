@@ -4,7 +4,12 @@ Workflow any JavaScript/TypeScript application (including React apps) to GitHub 
 
 ## Usage
 
-Create a new workflow in your repository. Here's an example that will work for many cases:
+First, configure your repository to publish Pages from Actions:
+
+1. Navigate to the "Pages" section of the repository settings
+2. Under "Build and deployment" set the "Source" to "GitHub Actions"
+
+Then, create a new workflow file in your repository. Here's an example that will work for many cases:
 
 **/.github/workflows/publish-pages.yml**
 ```yml
