@@ -3,6 +3,10 @@ name: Publish JS to GitHub Pages
 description: Build and publish a JavaScript application to Pages
 
 inputs:
+  node_version:
+    description: Version of NodeJS to install
+    default: "18"
+
   install_command:
     description: Shell command to install dependencies
     default: npm ci
@@ -27,7 +31,7 @@ runs:
     
     - uses: actions/setup-node@v3
       with:
-        node-version: 18
+        node-version: ${{ inputs.node_version }}
     
     - run: |
         ${{ inputs.install_command }}
